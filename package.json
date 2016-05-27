@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "voting app using redux",
   "main": "index.js",
+"repository" :
+  { "type" : "git",
+    "url" : "https://github.com/alexg1021/voting-server.git"
+  }
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --recursive",
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js  --recursive",
     "test:watch": "npm run test -- --watch"
   },
   "keywords": [],
@@ -15,6 +19,7 @@
     "babel-core": "^6.9.0",
     "babel-preset-es2015": "^6.9.0",
     "chai": "^3.5.0",
+    "chai-immutable": "^1.5.4",
     "mocha": "^2.4.5"
   },
   "babel": {
